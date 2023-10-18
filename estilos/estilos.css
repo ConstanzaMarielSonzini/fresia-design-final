@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Poppins:wght@300&family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Oooh+Baby&family=Poppins:wght@300&family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Kdam+Thmor+Pro&family=Oooh+Baby&family=Poppins:wght@300&family=Secular+One&display=swap');
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: #f2f2f2;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .fondo-luigina {
+    position: relative;
+    background-image: url(imagenes/img5.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+  
+  .fondo-luigina::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1; /* Cambiado a un valor menor */
+  }
+  
+  .textos-portada {
+    position: relative;
+    z-index: 2; /* Asegura que el texto esté por encima de la capa de transparencia */
+    color: #fff; /* Cambia el color del texto para que sea legible en la capa oscura */
+    padding-top: 30%;
+  }
+
+  .textos-portada .años{
+    position: relative;
+    z-index: 2; /* Asegura que el texto esté por encima de la capa de transparencia */
+    color: #fff; /* Cambia el color del texto para que sea legible en la capa oscura */
+    margin-top: -1%;
+
+  }
+
+  .icono {
+    padding-top: 23px;
+    height: 30px;
+    position: relative;
+    z-index: 2;
+    animation: moverIcono 1s infinite alternate;
+  }
+  
+  @keyframes moverIcono {
+    20% {
+      top: 0;
+    }
+    100% {
+      top: 20px;
+    }
+  }
+
+  .image:hover {
+    filter: none;
+  }
+
+  
+  h1 {
+    font-family: 'Corinthia', cursive;
+    align-content: center;
+    font-size: 80px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+  }
+  
+ .años {
+    font-size:20px;
+    margin-top: 2%;
+    
+  }
+
+  p.info {
+    font-size: 20px;
+    margin-top: 0%;
+    font-family: 'Poppins', sans-serif;
+  }
+ 
+  
+  .map-button {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 10px 60px;
+    background-color: #3c2e0466;
+    color: #3c2e04;
+    border: 2px solid #3c2e04;
+    border-radius: 40px;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .map-button:hover {
+    background-color: #ffffff; /* Cambia el color de fondo al poner el mouse encima */
+    color:#3c2e04; /* Cambia el color del texto al poner el mouse encima */
+  }
+
+  #countdown-container {
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  #countdown {
+    margin-top: 50px ;
+  }
+  
+.bloque #countdown{
+  font-family: 'Poppins', sans-serif;
+  display: inline-block;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #3c2e0491;
+  color: #3c2e04;
+  margin-top: 0%;
+  font-size: 50px;
+  text-decoration: none;
+}
+
+.contenedor-imagenes {
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.imagen-nueva {
+  margin-top: 70px;
+  max-height: 400px;
+  width: 400px;
+  margin-inline: 5px;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+  cursor: pointer;
+  border-radius: 20px;
+  flex: 1;
+}
+
+.imagen-nueva:hover {
+  filter: none;
+  transform: scale(1.07);
+}
+
+
+.dress-code{
+  margin-top: 2%;
+  padding: 20px;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+
+.informacion-fiesta {
+  margin-top: 2%;
+  padding: 20px;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.contenedor-regalos{
+  background-color: white;
+  height: 180px;
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contenedor-regalos p{
+  margin: 0%;
+  font-size: 20px;
+  padding: 30px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+.saludo-final{
+  padding: 20px;
+  font-size: 20px;
+  background-color: rgb(255, 255, 255);
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer {
+  background-color: #0311d125;
+  color: #000000;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-info {
+  font-size: 17px;
+  display: inline-block;
+  margin-inline:3%;
+}
+
+@media only screen and (max-width: 1100px) {
+
+  .map-button {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 10px 60px;
+    background-color: #3c2e0466;
+    color: #3c2e04;
+    border: 2px solid #3c2e04;
+    border: 2px solid;
+    border-radius: 40px;
+    font-size: 35px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .map-button:hover {
+    background-color: #ffffff; /* Cambia el color de fondo al poner el mouse encima */
+    color: #000000; /* Cambia el color del texto al poner el mouse encima */
+  }
+}
+  .contenedor-regalos{
+    background-color: white;
+    height: 400px;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .saludo-final{
+    padding: 20px;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+  }
+  .footer {
+    background-color: #00000032;
+    color: #000000;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  .footer-info {
+    font-size: 16px;
+    display: inline-block;
+    margin-inline:2%;
+    padding: 10px;
+  }
