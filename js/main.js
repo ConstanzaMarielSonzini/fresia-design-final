@@ -7,3 +7,12 @@ img1.addEventListener('mouseover', () => {
   img1.src = 'img1.jpg';
 });
 
+/*MENU COLOR*/
+
+document.addEventListener("DOMContentLoaded", function () {
+  var currentPage = window.location.pathname;
+
+  if (currentPage.includes("servicios.html")) {
+      document.getElementById("servicios").style.color = "red";
+  }
+});

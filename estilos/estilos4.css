@@ -245,22 +245,4 @@ body {
     font-family: 'Poppins', sans-serif;
   }
   
-  .saludo-final{
-    padding: 20px;
-    font-size: 20px;
-    background-color: rgb(255, 255, 255);
-    font-family: 'Poppins', sans-serif;
-  }
-  .footer {
-    background-color: #00000032;
-    color: #000000;
-    padding: 10px 0;
-    text-align: center;
-  }
   
-  .footer-info {
-    font-size: 16px;
-    display: inline-block;
-    margin-inline:2%;
-    padding: 10px;
-  }

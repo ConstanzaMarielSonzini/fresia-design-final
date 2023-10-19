@@ -4,8 +4,9 @@ body{
     justify-content: center;
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    background-color: #f2f2f2;
+    background-color: #ffffff;
     width: 100%; 
+    margin: 0;
 }
 
 /*LOGO*/
@@ -67,9 +68,14 @@ nav a:hover {
     color: #b69cff; /* Color al pasar el mouse */
 }
 
+
+.active {
+
+  color: #b69cff;
+}
 /*BODY - FONDO*/
 
-.fondo-fresia {
+.fondo-fresia-inicio {
     position: relative;
     background-image: url(../imagenes/fresia1.jpg);
     background-size: cover;
@@ -78,7 +84,7 @@ nav a:hover {
     height: 100vh;
   }
   
-.fondo-fresia::before {
+.fondo-fresia-inicio::before {
     content: "";
     position: absolute;
     top: 0;
@@ -89,6 +95,47 @@ nav a:hover {
     z-index: 1; /* Cambiado a un valor menor */
   }
 
+  .fondo-fresia-servicio {
+    position: relative;
+    background-image: url(../imagenes/fresia5.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+  
+.fondo-fresia-servicio::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1; /* Cambiado a un valor menor */
+  }
+  
+  .fondo-fresia-nosotros {
+    position: relative;
+    background-image: url(../imagenes/fotocoti.PNG);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+  
+.fondo-fresia-nosotros::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1; /* Cambiado a un valor menor */
+  }
+ 
+  
   /*INICIO*/
 
   .info-general{
@@ -128,7 +175,7 @@ nav a:hover {
 
   .carousel-container {
     margin: 0 auto; /* Centra horizontalmente la sección */
-    width: 90%;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -143,10 +190,10 @@ nav a:hover {
   
   .carousel img {
     max-width: 31.8%;
-    padding: 8px; /* Espacio entre las imágenes */
+    
     margin-top: 50px;
     margin-bottom: 30px;
-    margin-inline: 5px;
+    margin-inline: 10px;
     object-fit: cover;
     filter: grayscale(100%);
     transition: filter 0.3s;
@@ -187,7 +234,7 @@ nav a:hover {
     }
     
 .botones {
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 
@@ -234,4 +281,113 @@ nav a:hover {
 .imagen-nueva2:hover .hover-image {
   opacity: 2;
 }
+
+/*FOOTER*/
+
+.footer {
+  background-color: #333; /* Color de fondo del encabezado */
+  color: #fff; /* Color de texto del encabezado */
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.footer-container {
+  list-style: none; /* Quita las viñetas de la lista */
+  display: flex; /* Muestra los elementos del menú en línea */
+  height: 70px;
+  margin-top: 0;
+}
+
+.footer-info1{
+  font-size: 14px;
+  margin-inline: 50px;
+  color:#b69cff;
+  margin-top: 0;
+  padding: 25px;
+}
+
+.footer-info{
+  font-size: 14px;
+  margin-inline: 50px;
+  margin-top: 0;
+  padding: 25px;
+}
+
+.saludo-final{
+  padding: 20px;
+  font-size: 16px;
+  background-color: rgb(255, 255, 255);
+  font-family: 'Poppins', sans-serif;
+}
+
+/*SOBRE NOSOTROS*/
+
+.fotocoti {
+  width: 40%;
+  margin-top: -80px;
+  margin-bottom: -50px;
+  clip-path: circle(40% at center); /* Recorta la imagen en forma de círculo */
+}
+
+.info-general{
+  width: 100%; /* Establece el ancho del 80% de la ventana del navegador */
+  margin-top: 50px;
+}
+
+.info-nosotros {
+  width: 40%;
+  padding-right: 3.3%;
+  padding-left: 11%;
+  font-size: 16px;
+  text-align: justify;
+  float: left;
+}
+
+#boton-nosotros {
+  margin-top: -10px¿
+}
+
+
+
+.carousel-container-nosotros {
+  margin: 0 auto; /* Centra horizontalmente la sección */
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Para ocultar las imágenes fuera del carrusel */
+}
+
+.carousel-nosotros {
+  display: flex;
+  transition: transform 0.5s; /* Para una transición suave al cambiar las imágenes */
+  border-radius: 20px;
+  margin: 0 auto; /* Centra horizontalmente la sección */
+}
+
+.carousel-nosotros img {
+  max-width: 31.945%;
+  margin: 0 auto; /* Centra horizontalmente la sección */
+  margin-top: 50px;
+  margin-bottom: 30px;
+  margin-inline: 10px;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+  cursor: pointer;
+  flex: 1;
+  border-radius: 20px;
+  }
+  
+  .carousel-nosotros img:hover {
+   
+    filter: none;
+    transform: scale(1.06);
+    border-radius: 20px;
+  }
+
+
+
+
 
