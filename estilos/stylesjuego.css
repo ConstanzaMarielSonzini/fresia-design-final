@@ -1,0 +1,58 @@
+body {
+    
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #000000;
+    padding: 0;
+    margin-top: 5%;
+  }
+
+  .icono {
+    width: 8%;
+  }
+  
+  h1 {
+    color: #ffffff;
+    font-size: 60px;
+  }
+  
+  #word-container {
+    color: #ffffff;
+    margin: 0 auto;
+    width: 80%;
+    font-size: 50px;
+    padding-bottom: 15px;
+    margin-bottom: 4%;
+    margin-top: 5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #guess-input {
+    padding: 8px;
+    text-align: center;
+    font-size: 15px;
+    width: 12%;
+    border-radius: 20px;
+    border: none;
+  }
+  
+  button {
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-size: 15px;
+    background-color: #db019a;
+    color: #fff;
+    border: none;
+    margin-left: 1%;
+  }
+  
+  button:hover {
+    background-color: #ffffff;
+    color: rgb(208, 0, 215)
+  }
+  
+  #message {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    margin-top: 30px;
+  }
