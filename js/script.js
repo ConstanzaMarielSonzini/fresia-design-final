@@ -26,3 +26,5 @@ nextButton.addEventListener('click', () => {
 
 // Mostrar el primer conjunto de tres imágenes al cargar la página
 updateCarousel();
+
+

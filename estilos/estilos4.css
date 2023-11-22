@@ -216,33 +216,3 @@ body {
   margin-inline:3%;
 }
 
-@media only screen and (max-width: 1100px) {
-
-  .map-button {
-    display: inline-block;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    padding: 10px 60px;
-    background-color: #3c2e0466;
-    color: #3c2e04;
-    border: 2px solid #3c2e04;
-    border: 2px solid;
-    border-radius: 40px;
-    font-size: 35px;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  .map-button:hover {
-    background-color: #ffffff; /* Cambia el color de fondo al poner el mouse encima */
-    color: #000000; /* Cambia el color del texto al poner el mouse encima */
-  }
-}
-  .contenedor-regalos{
-    background-color: white;
-    height: 400px;
-    background-color: white;
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  

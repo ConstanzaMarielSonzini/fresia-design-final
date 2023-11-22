@@ -1,388 +1,281 @@
 /*BODY*/
 
 body{
-    justify-content: center;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    background-color: #ffffff;
-    width: 100%; 
-    margin: 0;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  background-color: #ffffff;
+  width: 100%; 
+  margin: 0;
 }
 
 /*LOGO*/
 
 .logo-portada img{
-    width: 15%;
+  width: 15%;
+  height: auto;
+  position: relative;
+  padding-top: 28%;
+  z-index: 2; /* Asegura que el texto esté por encima de la capa de transparencia */
+  color: #fff; /* Cambia el color del texto para que sea legible en la capa oscura */
+}
+
+.icono {
+  padding-top: 15px;
+  height: 30px;
+  position: relative;
+  z-index: 2;
+  animation: moverIcono 1s infinite alternate;
+}
+
+@keyframes moverIcono {
+  20% {
+    top: 0;
+  }
+  100% {
+    top: 20px;
+  }
+}
+
+@media (max-width: 1100px) {
+
+  .logo-portada img{
+    width: 30%;
     height: auto;
     position: relative;
-    padding-top: 28%;
+    margin-top: 32%;
     z-index: 2; /* Asegura que el texto esté por encima de la capa de transparencia */
     color: #fff; /* Cambia el color del texto para que sea legible en la capa oscura */
   }
-
-  .icono {
-    padding-top: 15px;
-    height: 30px;
-    position: relative;
-    z-index: 2;
-    animation: moverIcono 1s infinite alternate;
-  }
   
-  @keyframes moverIcono {
-    20% {
-      top: 0;
-    }
-    100% {
-      top: 20px;
-    }
-  }
+}
 
 
 /*HEADER*/
 
 header {
-    background-color: #333; /* Color de fondo del encabezado */
-    color: #fff; /* Color de texto del encabezado */
-    display: flex;
-    justify-content: center;
+  background-color: #333; /* Color de fondo del encabezado */
+  color: #fff; /* Color de texto del encabezado */
+  display: flex;
+  justify-content: center;
 }
 
 nav ul {
-    list-style: none; /* Quita las viñetas de la lista */
-    display: flex; /* Muestra los elementos del menú en línea */
-    padding: 0%;
+  list-style: none; /* Quita las viñetas de la lista */
+  display: flex; /* Muestra los elementos del menú en línea */
+  padding: 0%;
 }
 
 nav li {
-    margin-inline: 20px; /* Espacio entre elementos del menú */
+  margin-inline: 20px; /* Espacio entre elementos del menú */
 }
 
 nav a {
-    text-decoration: none; /* Quita el subrayado de los enlaces */
-    color: #fff; /* Color de texto de los enlaces */
-    font-weight: thin; /* Texto en negrita */
+  text-decoration: none; /* Quita el subrayado de los enlaces */
+  color: #fff; /* Color de texto de los enlaces */
+  font-weight: thin; /* Texto en negrita */
 }
 
 /* Cambiar color de enlace al pasar el mouse sobre ellos */
 nav a:hover {
-    color: #b69cff; /* Color al pasar el mouse */
+  color: #b69cff; /* Color al pasar el mouse */
 }
-
 
 .active {
-
   color: #b69cff;
 }
+
+.menu-celular{
+  display: none;
+}
+
+.menu-btn {
+  display: none;
+}
+
+/* Estilos para el menú desplegable */
+@media (max-width: 1100px) {
+
+  .menu-escritorio {
+   display: none;
+  }
+ 
+  .menu-btn {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   display:flex;
+   font-size: 50px;
+   z-index: 3;
+ }
+ 
+ 
+  .menu-celular{
+   display: block;
+   position: absolute;
+   color: white;
+   padding-left: 8%;
+   margin-top: -80%;
+   width: 90%;
+   z-index: 3;
+  }
+ 
+ 
+   .menu-mobile {
+     display:block;
+     font-size: 30px;
+     text-align: left;
+     list-style: none;
+     margin-top: -7%;
+     margin-left: 7%;
+   }
+ 
+   a {
+     color: white;
+     text-decoration: none;
+   }
+   
+ }
+
+
 /*BODY - FONDO*/
 
 .fondo-fresia-inicio {
+  position: relative;
+  background-image: url(../imagenes/fresia1.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.fondo-fresia-inicio::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1; /* Cambiado a un valor menor */
+}
+
+@media (max-width: 1100px){
+  .fondo-fresia-inicio {
     position: relative;
     background-image: url(../imagenes/fresia1.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    height: 100vh;
-  }
-  
-.fondo-fresia-inicio::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 1; /* Cambiado a un valor menor */
+    height: 50vh;
   }
 
+}
+
+
+.fondo-fresia-servicio {
+  position: relative;
+  background-image: url(../imagenes/fresia5.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.fondo-fresia-servicio::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1; /* Cambiado a un valor menor */
+}
+
+@media (max-width: 1100px){
   .fondo-fresia-servicio {
     position: relative;
     background-image: url(../imagenes/fresia5.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 50vh;
   }
-  
-.fondo-fresia-servicio::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 1; /* Cambiado a un valor menor */
-  }
-  
+
+}
+
+.fondo-fresia-nosotros {
+  position: relative;
+  background-image: url(../imagenes/fotocoti.PNG);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.fondo-fresia-nosotros::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1; /* Cambiado a un valor menor */
+}
+
+@media (max-width: 1100px){
   .fondo-fresia-nosotros {
     position: relative;
     background-image: url(../imagenes/fotocoti.PNG);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    height: 100vh;
-  }
-  
-.fondo-fresia-nosotros::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 1; /* Cambiado a un valor menor */
-  }
- 
-  
-  /*INICIO*/
-
-  .info-general{
-    width: 100%; /* Establece el ancho del 80% de la ventana del navegador */
-    margin-top: 50px;
-  }
-  .info-general .info {
-    width: 50%;
-    margin: 0 auto; /* Centra horizontalmente la sección */
-    font-size: 16px;
-    text-align: center;
+    height: 50vh;
   }
 
-  /*BOTON INSTAGRAM*/
-
-  .boton {
-    display: inline-block;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    padding: 10px 60px;
-    background-color: #69068d66;
-    color: #ffffff;
-    border: 2px solid #69068d;
-    border-radius: 40px;
-    font-size: 15px;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  .boton:hover {
-    background-color: #ffffff; /* Cambia el color de fondo al poner el mouse encima */
-    color:#69068d; /* Cambia el color del texto al poner el mouse encima */
-  }
-
-
-  /*CARRUSEL*/
-
-  .carousel-container {
-    margin: 0 auto; /* Centra horizontalmente la sección */
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden; /* Para ocultar las imágenes fuera del carrusel */
-  }
-  
-  .carousel {
-    display: flex;
-    transition: transform 0.5s; /* Para una transición suave al cambiar las imágenes */
-    border-radius: 20px;
-  }
-  
-  .carousel img {
-    max-width: 31.8%;
-    
-    margin-top: 50px;
-    margin-bottom: 30px;
-    margin-inline: 10px;
-    object-fit: cover;
-    filter: grayscale(100%);
-    transition: filter 0.3s;
-    cursor: pointer;
-    flex: 1;
-    border-radius: 20px;
-    }
-    
-    .carousel img:hover {
-      filter: none;
-      transform: scale(1.06);
-    }
-
-    /*BOTONES CARRUSEL */
-    
-    #prev, #next {
-      width: 60px; /* Ancho del botón circular */
-      height: 60px; /* Alto del botón circular */
-      border-radius: 50%; /* Establece el borde redondeado para hacerlo circular */
-      background-color: #69068d66; /* Color de fondo del botón */
-      display: inline-block;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-      border: none; /* Elimina el borde */
-      margin: 0 10px; /* Margen izquierdo y derecho para separar los botones */
-    }
-    
-    #prev img, #next img {
-      width: 25%; /* Ajusta el ancho del ícono al 100% del contenedor del botón */
-      height: auto; /* Mantiene la proporción de aspecto de la imagen */
-    }
-    
-    #prev:hover, #next:hover {
-      background-color: #ffffff; /* Cambia el color de fondo al poner el mouse encima */
-      color: #69068d; /* Cambia el color del ícono al poner el mouse encima */
-      border: 2px solid #69068d;
-    }
-    
-.botones {
-  margin-top: 20px;
 }
 
-
-/*GALERIA DE SERVICIOS*/
-
-.conteiner-servicios {
-
-  display: flex;
-  margin-top: 50px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 40px;
-  
-}
-
-.conteiner-servicios .imagen-nueva2 {
-  position: relative;
-  margin: 10px;
-  max-width: 25%; 
-  
-}
-
-.imagen-nueva2 img, .hover-image {
-  max-width: 100%;
-  height: auto;
-  transition: transform 0.3s;
-  border-radius: 20px;
-}
-
-.hover-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-}
-
-.imagen-nueva2:hover img {
-  transform: scale(1.03);
-}
-
-.imagen-nueva2:hover .hover-image {
-  opacity: 2;
-}
-
-/*PROYECTOS*/
-/*proyecto casamiento*/
-#banner-servicio{
-  width: 65%;
-  border-radius: 30px;
-  }
-
-  .banners-contenedor{
-    width: 100%;
-    margin: 0 auto;
-    margin-top: 1.8%;
-  }
-  
-  .banners-contenedor .boton-servicio {
-    position: absolute;
-    margin-left: -14%;
-    margin-top: 12%;
-    padding: 10px 60px;
-    background-color: #69068d;
-    color: #ffffff;
-    border: 2px solid #69068d;
-    border-radius: 40px;
-    font-size: 15px;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  .boton-servicio:hover {
-    background-color: #ffffff; 
-    color:#69068d; 
-    border: 2px solid #69068d;
-  }
-  
-
-
-/*FOOTER*/
-
-.footer {
-  background-color: #333; /* Color de fondo del encabezado */
-  color: #fff; /* Color de texto del encabezado */
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-}
-
-.footer-container {
-  list-style: none; /* Quita las viñetas de la lista */
-  display: flex; /* Muestra los elementos del menú en línea */
-  height: 70px;
-  margin-top: 0;
-}
-
-.footer-info1{
-  font-size: 14px;
-  margin-inline: 50px;
-  color:#b69cff;
-  margin-top: 0;
-  padding: 25px;
-}
-
-.footer-info{
-  font-size: 14px;
-  margin-inline: 50px;
-  margin-top: 0;
-  padding: 25px;
-}
-
-.saludo-final{
-  padding: 20px;
-  font-size: 16px;
-  background-color: rgb(255, 255, 255);
-  font-family: 'Poppins', sans-serif;
-}
-
-/*SOBRE NOSOTROS*/
-
-.fotocoti {
-  width: 40%;
-  margin-top: -80px;
-  margin-bottom: -50px;
-  clip-path: circle(40% at center); /* Recorta la imagen en forma de círculo */
-}
+/*INICIO*/
 
 .info-general{
-  width: 100%; /* Establece el ancho del 80% de la ventana del navegador */
+  width: 100%; 
   margin-top: 50px;
 }
-
-.info-nosotros {
-  width: 40%;
-  padding-right: 3.3%;
-  padding-left: 11%;
+.info-general .info {
+  width: 100%;
+  margin: 0 auto; /* Centra horizontalmente la sección */
   font-size: 16px;
-  text-align: justify;
-  float: left;
-}
-
-#boton-nosotros {
-  margin-top: -10px¿
+  text-align: center;
 }
 
 
+/*BOTON INSTAGRAM*/
 
-.carousel-container-nosotros {
+.boton {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 10px 60px;
+  background-color: #69068d66;
+  color: #ffffff;
+  border: 2px solid #69068d;
+  border-radius: 40px;
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.boton:hover {
+  background-color: #ffffff; /* Cambia el color de fondo al poner el mouse encima */
+  color:#69068d; /* Cambia el color del texto al poner el mouse encima */
+}
+
+
+/*CARRUSEL*/
+
+.carousel-container {
   margin: 0 auto; /* Centra horizontalmente la sección */
   width: 80%;
   display: flex;
@@ -391,16 +284,15 @@ nav a:hover {
   overflow: hidden; /* Para ocultar las imágenes fuera del carrusel */
 }
 
-.carousel-nosotros {
+.carousel {
   display: flex;
   transition: transform 0.5s; /* Para una transición suave al cambiar las imágenes */
   border-radius: 20px;
-  margin: 0 auto; /* Centra horizontalmente la sección */
 }
 
-.carousel-nosotros img {
-  max-width: 31.945%;
-  margin: 0 auto; /* Centra horizontalmente la sección */
+.carousel img {
+  max-width: 31.8%;
+  
   margin-top: 50px;
   margin-bottom: 30px;
   margin-inline: 10px;
@@ -412,10 +304,262 @@ nav a:hover {
   border-radius: 20px;
   }
   
-  .carousel-nosotros img:hover {
-   
+  .carousel img:hover {
     filter: none;
     transform: scale(1.06);
-    border-radius: 20px;
   }
+
+  /*BOTONES CARRUSEL */
+  
+  #prev, #next {
+    width: 60px; /* Ancho del botón circular */
+    height: 60px; /* Alto del botón circular */
+    border-radius: 50%; /* Establece el borde redondeado para hacerlo circular */
+    background-color: #69068d66; /* Color de fondo del botón */
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none; /* Elimina el borde */
+    margin: 0 10px; /* Margen izquierdo y derecho para separar los botones */
+  }
+  
+  #prev img, #next img {
+    width: 25%; /* Ajusta el ancho del ícono al 100% del contenedor del botón */
+    height: auto; /* Mantiene la proporción de aspecto de la imagen */
+  }
+  
+  #prev:hover, #next:hover {
+    background-color: #ffffff; /* Cambia el color de fondo al poner el mouse encima */
+    color: #69068d; /* Cambia el color del ícono al poner el mouse encima */
+    border: 2px solid #69068d;
+  }
+  
+.botones {
+margin-top: 20px;
+}
+
+
+/*GALERIA DE SERVICIOS*/
+
+.conteiner-servicios {
+
+display: flex;
+margin-top: 50px;
+align-items: center;
+justify-content: center;
+border-radius: 40px;
+
+}
+
+.conteiner-servicios .imagen-nueva2 {
+position: relative;
+margin: 10px;
+max-width: 25%; 
+
+}
+
+.imagen-nueva2 img, .hover-image {
+max-width: 100%;
+height: auto;
+transition: transform 0.3s;
+border-radius: 20px;
+}
+
+.hover-image {
+position: absolute;
+top: 0;
+left: 0;
+opacity: 0;
+}
+
+.imagen-nueva2:hover img {
+transform: scale(1.03);
+}
+
+.imagen-nueva2:hover .hover-image {
+opacity: 2;
+}
+
+/*PROYECTOS*/
+/*proyecto casamiento*/
+#banner-servicio{
+width: 65%;
+border-radius: 30px;
+}
+
+.banners-contenedor{
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 1.8%;
+}
+
+.banners-contenedor .boton-servicio {
+  position: absolute;
+  margin-left: -14%;
+  margin-top: 12%;
+  padding: 10px 60px;
+  background-color: #69068d;
+  color: #ffffff;
+  border: 2px solid #69068d;
+  border-radius: 40px;
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.boton-servicio:hover {
+  background-color: #ffffff; 
+  color:#69068d; 
+  border: 2px solid #69068d;
+}
+
+
+
+/*FOOTER*/
+
+.footer {
+background-color: #333; /* Color de fondo del encabezado */
+color: #fff; /* Color de texto del encabezado */
+display: flex;
+justify-content: center;
+margin-top: 50px;
+}
+
+.footer-container {
+list-style: none; /* Quita las viñetas de la lista */
+display: flex; /* Muestra los elementos del menú en línea */
+height: 70px;
+margin-top: 0;
+}
+
+.footer-info1{
+font-size: 14px;
+margin-inline: 50px;
+color:#b69cff;
+margin-top: 0;
+padding: 25px;
+}
+
+.footer-info{
+font-size: 14px;
+margin-inline: 50px;
+margin-top: 0;
+padding: 25px;
+}
+
+.saludo-final{
+padding: 20px;
+font-size: 16px;
+background-color: rgb(255, 255, 255);
+font-family: 'Poppins', sans-serif;
+}
+
+/*SOBRE NOSOTROS*/
+
+.fotocoti {
+width: 40%;
+margin-top: -80px;
+margin-bottom: -50px;
+clip-path: circle(40% at center); /* Recorta la imagen en forma de círculo */
+}
+
+.info-general{
+width: 100%; /* Establece el ancho del 80% de la ventana del navegador */
+margin-top: 50px;
+}
+
+.info-nosotros {
+width: 40%;
+padding-right: 3.3%;
+padding-left: 11%;
+font-size: 16px;
+text-align: justify;
+float: left;
+}
+
+#boton-nosotros {
+margin-top: -10px¿
+}
+
+
+
+.carousel-container-nosotros {
+margin: 0 auto; /* Centra horizontalmente la sección */
+width: 80%;
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden; /* Para ocultar las imágenes fuera del carrusel */
+}
+
+.carousel-nosotros {
+display: flex;
+transition: transform 0.5s; /* Para una transición suave al cambiar las imágenes */
+border-radius: 20px;
+margin: 0 auto; /* Centra horizontalmente la sección */
+}
+
+.carousel-nosotros img {
+max-width: 31.945%;
+margin: 0 auto; /* Centra horizontalmente la sección */
+margin-top: 50px;
+margin-bottom: 30px;
+margin-inline: 10px;
+object-fit: cover;
+filter: grayscale(100%);
+transition: filter 0.3s;
+cursor: pointer;
+flex: 1;
+border-radius: 20px;
+}
+
+.carousel-nosotros img:hover {
+ 
+  filter: none;
+  transform: scale(1.06);
+  border-radius: 20px;
+}
+
+
+
+/*ESTILOS PARA CELULAR*/
+
+@media only screen and (max-width: 1100px) {
+
+  .map-button {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 10px 60px;
+    background-color: #3c2e0466;
+    color: #3c2e04;
+    border: 2px solid #3c2e04;
+    border: 2px solid;
+    border-radius: 40px;
+    font-size: 35px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .map-button:hover {
+    background-color: #ffffff; /* Cambia el color de fondo al poner el mouse encima */
+    color: #000000; /* Cambia el color del texto al poner el mouse encima */
+  }
+}
+  .contenedor-regalos{
+    background-color: white;
+    height: 200px;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+  }
+
+
+
+
+
+/* Estilos para dispositivos móviles */
+
+
+/* Estilos para escritorio */
 
