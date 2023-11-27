@@ -128,7 +128,6 @@ nav a:hover {
      list-style: none;
      margin-top: -2%;
      margin-left: 7%;
-     z-index: 5;
    }
  
    a {
@@ -240,6 +239,8 @@ nav a:hover {
 
 /*INICIO*/
 
+
+
 .info-general{
   width: 100%; 
   margin-top: 50px;
@@ -251,6 +252,17 @@ nav a:hover {
   text-align: center;
 }
 
+@media (max-width: 1100px){
+
+  h2 {
+    font-size: 50px;
+  }
+  .info-general p.info{
+    font-size: 16px;
+    width: 80%; 
+    margin-top: 50px;
+}
+}
 
 /*BOTON INSTAGRAM*/
 
@@ -273,6 +285,16 @@ nav a:hover {
   color:#69068d; /* Cambia el color del texto al poner el mouse encima */
 }
 
+@media (max-width: 1100px){
+
+  .boton {
+    margin-top: 65px;
+    margin-bottom: 30px;
+    font-size: 40px;
+  }
+ 
+  
+}
 
 /*CARRUSEL*/
 
@@ -387,6 +409,15 @@ opacity: 2;
 #banner-servicio{
 width: 65%;
 border-radius: 30px;
+}
+
+@media (max-width: 1100px){
+
+  #banner-servicio{
+    margin-top: 65px;
+    margin-bottom: 30px;
+    font-size: 40px;
+  } 
 }
 
 .banners-contenedor{
