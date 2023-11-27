@@ -268,12 +268,12 @@ nav a:hover {
 
 .boton {
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 4%;
   margin-bottom: 30px;
   padding: 10px 60px;
-  background-color: #69068d66;
+  background-color: #b69cff;
   color: #ffffff;
-  border: 2px solid #69068d;
+  border: 2px solid #b69cff;
   border-radius: 40px;
   font-size: 15px;
   text-decoration: none;
@@ -282,7 +282,7 @@ nav a:hover {
 
 .boton:hover {
   background-color: #ffffff; /* Cambia el color de fondo al poner el mouse encima */
-  color:#69068d; /* Cambia el color del texto al poner el mouse encima */
+  color:#b69cff; /* Cambia el color del texto al poner el mouse encima */
 }
 
 @media (max-width: 1100px){
@@ -338,7 +338,7 @@ nav a:hover {
     width: 60px; /* Ancho del botón circular */
     height: 60px; /* Alto del botón circular */
     border-radius: 50%; /* Establece el borde redondeado para hacerlo circular */
-    background-color: #69068d66; /* Color de fondo del botón */
+    background-color: #b69cff; /* Color de fondo del botón */
     display: inline-block;
     justify-content: center;
     align-items: center;
@@ -354,8 +354,8 @@ nav a:hover {
   
   #prev:hover, #next:hover {
     background-color: #ffffff; /* Cambia el color de fondo al poner el mouse encima */
-    color: #69068d; /* Cambia el color del ícono al poner el mouse encima */
-    border: 2px solid #69068d;
+    color: #b69cff; /* Cambia el color del ícono al poner el mouse encima */
+    border: 2px solid #b69cff;
   }
   
 .botones {
@@ -431,9 +431,9 @@ border-radius: 30px;
   margin-left: -14%;
   margin-top: 12%;
   padding: 10px 60px;
-  background-color: #69068d;
+  background-color: #b69cff;
   color: #ffffff;
-  border: 2px solid #69068d;
+  border: 2px solid #b69cff;
   border-radius: 40px;
   font-size: 15px;
   text-decoration: none;
@@ -441,9 +441,9 @@ border-radius: 30px;
 }
 
 .boton-servicio:hover {
-  background-color: #ffffff; 
-  color:#69068d; 
-  border: 2px solid #69068d;
+  background-color: #7e5ae0; 
+  color:#ffffff; 
+  border: 2px solid #7e5ae0;
 }
 
 
@@ -467,7 +467,6 @@ margin-top: 0;
 
 .footer-info1{
 font-size: 14px;
-margin-inline: 50px;
 color:#b69cff;
 margin-top: 0;
 padding: 25px;
@@ -475,7 +474,6 @@ padding: 25px;
 
 .footer-info{
 font-size: 14px;
-margin-inline: 50px;
 margin-top: 0;
 padding: 25px;
 }

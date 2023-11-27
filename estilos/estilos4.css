@@ -203,16 +203,39 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+/*FOOTER*/
+
 .footer {
-  background-color: #0311d125;
-  color: #000000;
-  padding: 20px 0;
-  text-align: center;
-}
-
-.footer-info {
-  font-size: 17px;
-  display: inline-block;
-  margin-inline:3%;
-}
-
+  background-color: #333; /* Color de fondo del encabezado */
+  color: #fff; /* Color de texto del encabezado */
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  }
+  
+  .footer-container {
+  list-style: none; /* Quita las viñetas de la lista */
+  display: flex; /* Muestra los elementos del menú en línea */
+  height: 70px;
+  margin-top: 0;
+  }
+  
+  .footer-info1{
+  font-size: 14px;
+  color:#b69cff;
+  margin-top: 0;
+  padding: 25px;
+  }
+  
+  .footer-info{
+  font-size: 14px;
+  margin-top: 0;
+  padding: 25px;
+  }
+  
+  .saludo-final{
+  padding: 20px;
+  font-size: 16px;
+  background-color: rgb(255, 255, 255);
+  font-family: 'Poppins', sans-serif;
+  }
