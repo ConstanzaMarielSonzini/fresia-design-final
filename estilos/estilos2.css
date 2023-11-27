@@ -304,6 +304,7 @@ nav a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-size: cover;
   overflow: hidden; /* Para ocultar las imágenes fuera del carrusel */
 }
 
@@ -314,16 +315,15 @@ nav a:hover {
 }
 
 .carousel img {
-  max-width: 31.8%;
-  
+  max-width: 32%;
   margin-top: 50px;
   margin-bottom: 30px;
-  margin-inline: 10px;
+  margin-inline: 8px;
   object-fit: cover;
   filter: grayscale(100%);
   transition: filter 0.3s;
   cursor: pointer;
-  flex: 1;
+  flex: 3;
   border-radius: 20px;
   }
   
@@ -533,16 +533,16 @@ margin: 0 auto; /* Centra horizontalmente la sección */
 }
 
 .carousel-nosotros img {
-max-width: 31.945%;
+max-width: 32%;
 margin: 0 auto; /* Centra horizontalmente la sección */
 margin-top: 50px;
 margin-bottom: 30px;
-margin-inline: 10px;
+margin-inline: 8px;
 object-fit: cover;
 filter: grayscale(100%);
 transition: filter 0.3s;
 cursor: pointer;
-flex: 1;
+flex: 3;
 border-radius: 20px;
 }
 
