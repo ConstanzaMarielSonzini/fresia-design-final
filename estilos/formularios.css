@@ -1,0 +1,109 @@
+.caracter-transparente {
+    color: transparent;
+}
+
+.contenedor-formulario{
+    width: 100%;
+}
+
+
+.titulo-formulario{
+    float: left;
+    font-size: 50px;
+    margin-left: 10%;
+    margin-top: 6%;
+    text-align: justify;
+    color: #000000;
+}
+
+.titulo-resaltado{
+    color: #7547f6;
+}
+
+.contenedor-formulario{
+    margin-top: 5%;
+}
+
+form{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: #7547f6;
+    width: 30%;
+    color: white;
+    float: right;
+    border-radius: 20px;
+    text-align: left;
+    padding-left: 5%;
+    margin: 0 auto;
+    margin-right: 8%;
+}
+
+input{
+    align-tracks: right;
+}
+
+#nombre {
+    background-color: white;
+    border: 0;
+    border-radius: 20px;
+    height: 40px;
+    width: 60%;
+    margin-left: 5%;
+}
+
+#apellido {
+    background-color: white;
+    border: 0;
+    border-radius: 20px;
+    height: 40px;
+    width: 60%;
+    margin-left: 5%;
+}
+
+#telefono {
+    background-color: white;
+    border: 0;
+    border-radius: 20px;
+    height: 40px;
+    width: 60%;
+    margin-left: 5%;
+}
+
+#email {
+    background-color: white;
+    border: 0;
+    border-radius: 20px;
+    height: 40px;
+    width: 60%;
+    margin-left: 5%;
+}
+
+#mensaje {
+    background-color: white;
+    border: 0;
+    border-radius: 20px;
+    height: 40px;
+    width: 60%;
+    margin-left: 5%;
+}
+
+
+
+.boton-formulario {
+    float: right;
+    display: inline-block;
+    padding: 10px 60px;
+    background-color: #b69cff;
+    color: #ffffff;
+    border: 2px solid #b69cff;
+    border-radius: 40px;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 21%;
+  }
+  
+ .boton-formulario:hover {
+    background-color: #ffffff; /* Cambia el color de fondo al poner el mouse encima */
+    color:#b69cff; /* Cambia el color del texto al poner el mouse encima */
+  }

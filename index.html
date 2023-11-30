@@ -4,6 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <title>Fresia Design</title>
   <link rel="stylesheet" href="./estilos/estilos2.css">
+  <link rel="stylesheet" href="./estilos/formularios.css">
   
 </head>
 
@@ -83,26 +84,43 @@
   </div>
 
 
-    
-  <div class="saludo-final">
-  <p>
-    <br>Estoy aquí para ofrecerte soluciones excepcionales !!!
-  </p>
+
+  <div class="contenedor-formulario">
+    <h1 class="titulo-formulario">Estamos para ofrecerte <br><span class="titulo-resaltado">soluciones excepcionales.</span></h1>
+  
+    <form action="procesar_formulario.php" method="post">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required><br><br>
+      
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" name="apellido" required><br><br>
+      
+      <label for="email">Email:<span class="caracter-transparente">ooi</span></label>
+      <input type="email" id="email" name="email" required><br><br>
+      
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" required><br><br>
+      
+      <label for="mensaje">Mensaje:</label>
+      <input id="mensaje" name="mensaje"><br><br>
+
+      <input type="submit" value="Enviar" class="boton-formulario">
+    </form>
   </div>
 
   </div>
 
-<footer class="footer">
+  <footer class="footer">
 
-  <div class="footer-container">
-    <p class="footer-info1">Desarrollo de productos digitales by FRESIA DESIGN</p>
-    <p class="footer-info">Instragram: @fresia.design</p>
-    <p class="footer-info">Contacto: 0351 2066801</p>
-    <p class="footer-info">Diseñadora Gráfica: Constanza Mariel Sonzini</p>
-  </div>
-
-</footer>
-
+    <div class="footer-container">
+      <p class="footer-info1">Desarrollo de productos digitales by FRESIA DESIGN</p>
+      <p class="footer-info">Instragram: @fresia.design</p>
+      <p class="footer-info">Contacto: 0351 2066801</p>
+      <p class="footer-info">Diseñadora Gráfica: Constanza Mariel Sonzini</p>
+    </div>
+  
+  </footer>
+  
 
 <script src="./js/script.js"></script>
 <script src="./js/menuhamburguesa.js"></script>
