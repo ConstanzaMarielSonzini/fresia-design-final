@@ -449,14 +449,14 @@ border-radius: 30px;
 
 
 
-/*FOOTER*/
+/*FOOTER-index*/
 
 .footer {
 background-color: #333; /* Color de fondo del encabezado */
 color: #fff; /* Color de texto del encabezado */
 display: flex;
 justify-content: center;
-margin-top: 40%;
+margin-top: 8%;
 }
 
 .footer-container {
@@ -485,6 +485,8 @@ font-size: 16px;
 background-color: rgb(255, 255, 255);
 font-family: 'Poppins', sans-serif;
 }
+
+
 
 /*SOBRE NOSOTROS*/
 
