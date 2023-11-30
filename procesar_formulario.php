@@ -4,7 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Obtener los datos del formulario
     $nombre = $_POST['nombre'];
     $apellido = $_POST['apellido'];
-    $telefono = $_POST['telefono'];
+    $teléfono = $_POST['teléfono'];
     $email = $_POST['email'];
     $mensaje = $_POST['mensaje'];
 
@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Preparar la consulta SQL para insertar los datos en la tabla de clientes
     $sql = "INSERT INTO clientes (nombre, apellido, telefono, email, mensaje)
-            VALUES ('$nombre', '$apellido', '$telefono', '$email', '$mensaje')";
+            VALUES ('$nombre', '$apellido', '$teléfono', '$email', '$mensaje')";
 
     // Ejecutar la consulta
     if ($conn->query($sql) === TRUE) {
