@@ -27,7 +27,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Ejecutar la consulta
     if ($conn->query($sql) === TRUE) {
-        echo "¡Datos insertados correctamente en la base de datos!";
+        // Mostrar un mensaje de confirmación en la misma página
+        echo '<script>alert("Consulta enviada, muchas gracias!");</script>';
     } else {
         echo "Error al insertar datos: " . $conn->error;
     }
