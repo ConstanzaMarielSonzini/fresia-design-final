@@ -106,7 +106,7 @@ nav a:hover {
    width: 100%;
    height: 100%;
    display:flex;
-   font-size: 50px;
+   font-size: 90px;
    z-index: 3;
  }
  
@@ -115,22 +115,25 @@ nav a:hover {
    display: block;
    position: absolute;
    color: white;
-   padding-left: 8%;
+   padding-left: 9%;
    margin-top: -80%;
-   width: 90%;
+   width: 80%;
    z-index: 3;
   }
  
  
    .menu-mobile {
      display:block;
-     font-size: 30px;
+     font-size: 35px;
      text-align: left;
      list-style: none;
      margin-top: -2%;
-     margin-left: 7%;
+     margin-left: -4%;
    }
  
+li{
+  padding-top: 2%;
+}
    a {
      color: white;
      text-decoration: none;
