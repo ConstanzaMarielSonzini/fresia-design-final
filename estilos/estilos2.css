@@ -309,7 +309,7 @@ h2 {
   
   max-width: 80%; /* Ajusta el ancho máximo del carrusel */
   margin: 0 auto;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .carousel-slide {
@@ -327,6 +327,24 @@ h2 {
   height: auto;
 }
 
+.carousel-slide::-webkit-scrollbar {
+  height: 10px;
+}
+
+.carousel-slide::-webkit-scrollbar-track {
+  background: #ffffff; /* Color de fondo de la pista de la barra de desplazamiento */
+}
+
+.carousel-slide::-webkit-scrollbar-thumb {
+  background: #b69cff; /* Color del "pulgarcito" de la barra de desplazamiento */
+  border-radius: 5px; /* Borde redondeado del "pulgarcito" */
+}
+
+.carousel-slide::-webkit-scrollbar-thumb:hover {
+  background: #7547f6; /* Color del "pulgarcito" al pasar el cursor */
+}
+
+
 @media (max-width: 1100px) {
   .carousel-slide img {
     width: calc(100% / 1 ); /* Mostrar dos imágenes por fila en dispositivos más pequeños */
@@ -343,7 +361,7 @@ h2 {
 
 
   /*BOTONES CARRUSEL */
-  
+
   #prev, #next {
     width: 60px; /* Ancho del botón circular */
     height: 60px; /* Alto del botón circular */
@@ -554,7 +572,7 @@ border-radius: 30px;
   color: #fff; /* Color de texto del encabezado */
   display: flex;
   justify-content: center;
-  margin-top: 40%;
+  margin-top: 35%;
   }
   
   .footer-index-container {

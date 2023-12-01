@@ -12,7 +12,7 @@
     float: left;
     font-size: 55px;
     margin-left: 10%;
-    margin-top: 13%;
+    margin-top: 10%;
     text-align: justify;
     color: #000000;
     
@@ -36,9 +36,8 @@ form{
     border-radius: 20px;
     text-align: left;
     padding-left: 5%;
-    margin: 0 auto;
+    margin-top: -3%;
     margin-right: 8%;
-    margin-bottom: 2%;
 }
 
 input{

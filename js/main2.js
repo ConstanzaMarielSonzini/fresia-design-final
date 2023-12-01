@@ -6,7 +6,7 @@ const slide = document.querySelector('.carousel-slide');
 let scrollPosition = 0;
 
 nextBtn.addEventListener('click', () => {
-  scrollPosition += 530; // Ajusta la cantidad de desplazamiento según el ancho de tus imágenes
+  scrollPosition += 517; // Ajusta la cantidad de desplazamiento según el ancho de tus imágenes
   slide.scrollTo({
     left: scrollPosition,
     behavior: 'smooth'
@@ -14,7 +14,7 @@ nextBtn.addEventListener('click', () => {
 });
 
 prevBtn.addEventListener('click', () => {
-  scrollPosition -= 530; // Ajusta la cantidad de desplazamiento según el ancho de tus imágenes
+  scrollPosition -= 517; // Ajusta la cantidad de desplazamiento según el ancho de tus imágenes
   slide.scrollTo({
     left: scrollPosition,
     behavior: 'smooth'
