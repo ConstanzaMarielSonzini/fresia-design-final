@@ -1,11 +1,22 @@
 
-const img1 = document.getElementById('img1');
-const img2 = document.getElementById('img2');
-const img3 = document.getElementById('img3');
+const prevBtn = document.getElementById('prev');
+const nextBtn = document.getElementById('next');
+const slide = document.querySelector('.carousel-slide');
 
-// Cambiar las imágenes a color al pasar el mouse
-img1.addEventListener('mouseover', () => {
-  img1.src = 'img1.jpg';
+let scrollPosition = 0;
+
+nextBtn.addEventListener('click', () => {
+  scrollPosition += 530; // Ajusta la cantidad de desplazamiento según el ancho de tus imágenes
+  slide.scrollTo({
+    left: scrollPosition,
+    behavior: 'smooth'
+  });
 });
 
-
+prevBtn.addEventListener('click', () => {
+  scrollPosition -= 530; // Ajusta la cantidad de desplazamiento según el ancho de tus imágenes
+  slide.scrollTo({
+    left: scrollPosition,
+    behavior: 'smooth'
+  });
+});

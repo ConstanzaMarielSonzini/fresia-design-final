@@ -240,7 +240,10 @@ nav a:hover {
 
 /*INICIO*/
 
-
+h2 {
+  font-size: 30px;
+  color: #7547f6;
+}
 
 .info-general{
   width: 100%; 
@@ -256,10 +259,11 @@ nav a:hover {
 @media (max-width: 1100px){
 
   h2 {
-    font-size: 50px;
+    font-size: 70px;
+    color: #7547f6;
   }
+
   .info-general p.info{
-    font-size: 16px;
     width: 80%; 
     margin-top: 50px;
 }
@@ -298,40 +302,42 @@ nav a:hover {
 }
 
 /*CARRUSEL*/
-
 .carousel-container {
-  margin: 0 auto; /* Centra horizontalmente la sección */
-  width: 80%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-size: cover;
-  overflow: hidden; /* Para ocultar las imágenes fuera del carrusel */
-}
-
-.carousel {
-  display: flex;
-  transition: transform 0.5s; /* Para una transición suave al cambiar las imágenes */
-  border-radius: 20px;
-}
-
-.carousel img {
-  max-width: 32%;
-  margin-top: 50px;
-  margin-bottom: 30px;
-  margin-inline: 8px;
-  object-fit: cover;
-  filter: grayscale(100%);
-  transition: filter 0.3s;
-  cursor: pointer;
-  flex: 3;
-  border-radius: 20px;
-  }
   
-  .carousel img:hover {
-    filter: none;
-    transform: scale(1.06);
+  max-width: 80%; /* Ajusta el ancho máximo del carrusel */
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  margin-top: 3%;
+  margin-bottom: 5%;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 10px; /* Espacio entre las imágenes */
+}
+
+.carousel-slide img {
+  border-radius: 20px;
+  width: calc(100% / 3 - 10px); /* Calcula el ancho para mostrar tres imágenes por fila */
+  height: auto;
+}
+
+@media (max-width: 1100px) {
+  .carousel-slide img {
+    width: calc(100% / 1 ); /* Mostrar dos imágenes por fila en dispositivos más pequeños */
+
   }
+
+  .carousel-container {
+  
+    max-width: 100%; /* Ajusta el ancho máximo del carrusel */
+    margin: 0 auto;
+    overflow: hidden;
+  }
+}
+
 
   /*BOTONES CARRUSEL */
   
@@ -363,6 +369,37 @@ nav a:hover {
 margin-top: 20px;
 }
 
+@media (max-width: 1100px){
+
+ 
+  #prev, #next {
+    width: 110px; /* Ancho del botón circular */
+    height: 110px; /* Alto del botón circular */
+    border-radius: 50%; /* Establece el borde redondeado para hacerlo circular */
+    background-color: #b69cff; /* Color de fondo del botón */
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none; /* Elimina el borde */
+    margin: 0 10px; /* Margen izquierdo y derecho para separar los botones */
+  }
+  
+  #prev img, #next img {
+    width: 25%; /* Ajusta el ancho del ícono al 100% del contenedor del botón */
+    height: auto; /* Mantiene la proporción de aspecto de la imagen */
+  }
+  
+  #prev:hover, #next:hover {
+    background-color: #ffffff; /* Cambia el color de fondo al poner el mouse encima */
+    color: #b69cff; /* Cambia el color del ícono al poner el mouse encima */
+    border: 2px solid #b69cff;
+  }
+  
+.botones {
+margin-top: 20px;
+}
+}
 
 /*GALERIA DE SERVICIOS*/
 
@@ -547,7 +584,7 @@ border-radius: 30px;
     display: inline-block;
     padding-top: 2%;
     padding-bottom: 2%;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 .footer-index-info1{
@@ -592,8 +629,6 @@ float: left;
 margin-top: -10px¿
 }
 
-
-
 .carousel-container-nosotros {
 margin: 0 auto; /* Centra horizontalmente la sección */
 width: 80%;
@@ -611,7 +646,7 @@ margin: 0 auto; /* Centra horizontalmente la sección */
 }
 
 .carousel-nosotros img {
-max-width: 32%;
+max-width: 32.23%;
 margin: 0 auto; /* Centra horizontalmente la sección */
 margin-top: 50px;
 margin-bottom: 30px;
@@ -631,6 +666,46 @@ border-radius: 20px;
   border-radius: 20px;
 }
 
+
+
+@media only screen and (max-width: 1100px) {
+
+    .fotocoti {
+    display: none;
+    }
+    
+    .info-general{
+    width: 100%; /* Establece el ancho del 80% de la ventana del navegador */
+    margin-top: 50px;
+    }
+    
+    .info-nosotros {
+    width: 80%;
+    font-size: 35px;
+    text-align: justify;
+    }
+    
+    #boton-nosotros {
+    margin-top: -10px;
+    }
+    
+    .carousel-container-nosotros {
+    margin: 0 auto; /* Centra horizontalmente la sección */
+    width: 100%;
+    overflow: hidden; /* Para ocultar las imágenes fuera del carrusel */
+    }
+    
+    
+    .carousel-nosotros img {
+    max-width: 45%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    object-fit: cover;
+    margin-left: 0;
+    border-radius: 20px;
+    }
+
+}
 
 
 /*ESTILOS PARA CELULAR*/

@@ -10,9 +10,9 @@
 
 .titulo-formulario{
     float: left;
-    font-size: 50px;
+    font-size: 55px;
     margin-left: 10%;
-    margin-top: 6%;
+    margin-top: 13%;
     text-align: justify;
     color: #000000;
     
@@ -101,6 +101,7 @@ input{
     text-decoration: none;
     cursor: pointer;
     margin-right: 21%;
+    
   }
   
  .boton-formulario:hover {
@@ -108,16 +109,19 @@ input{
     color:#b69cff; /* Cambia el color del texto al poner el mouse encima */
   }
 
+  
 
   @media only screen and (max-width: 1100px) {
 
 
-    .titulo-formulario{
+    .titulo-formulario-total{
+        margin-bottom: 40%;
         font-size: 50px;
-        margin-top: 6%;
+    }
+
+    .titulo-formulario{        
         text-align: justify;
-        color: #000000;
-        
+        color: #000000;        
     }
     
     .titulo-resaltado{
@@ -125,77 +129,77 @@ input{
     }
     
     .contenedor-formulario{
-        margin-top: 5%;
+        margin: 0 !important;
     }
     
     form{
-        margin: 0;
-        font-size: 30px;
+        padding-top: 10%;
+        padding-bottom: 9%;
+        margin-left: 0% !important;
+        margin: 0% !important;
+        font-size: 35px;
         background-color: #7547f6;
-        width: 70%;
+        width: 100%;
         color: white;
-        border-radius: 20px;
-
-
+        float: none;
+        border-radius: 0 !important;
+        padding-left: 0;
     }
-    
+    label {
+        padding-left: 7%;
+    }
     
     #nombre {
         background-color: white;
         border: 0;
-        border-radius: 30px;
-        height: 50px;
-        width: 60%;
+        border-radius: 40px;
+        height: 80px;
+        width: 65%;
+
     }
     
     #apellido {
         background-color: white;
         border: 0;
-        border-radius: 30px;
-        height: 50px;
-        width: 60%;
+        border-radius: 40px;
+        height: 80px;
+        width: 65%;
     }
     
     #telefono {
         background-color: white;
         border: 0;
-        border-radius: 30px;
-        height: 50px;
-        width: 60%;
+        border-radius: 40px;
+        height: 80px;
+        width: 65%;
     }
     
     #email {
         background-color: white;
         border: 0;
-        border-radius: 30px;
-        height: 50px;
-        width: 60%;
+        border-radius: 40px;
+        height: 80px;
+        width: 65%;
     }
     
     #mensaje {
         background-color: white;
         border: 0;
-        border-radius: 30px;
-        height: 50px;
-        width: 60%;
-    }
-    
-    .boton-formulario {
-        display: inline-block;
-        padding: 10px 60px;
-        background-color: #b69cff;
-        color: #ffffff;
-        border: 2px solid #b69cff;
         border-radius: 40px;
-        font-size: 15px;
-        text-decoration: none;
-        cursor: pointer;
-        margin-right: 21%;
+        height: 80px;
+        width: 65%;
+    }
+
+    .boton-formulario {
+          margin-top: 65px;
+          font-size: 40px;
+          width: 40%;
+        }
+    
+    input.boton-formulario {
+      margin-left: 31%;
+    }
+        
       }
       
-     .boton-formulario:hover {
-        background-color: #ffffff; /* Cambia el color de fondo al poner el mouse encima */
-        color:#b69cff; /* Cambia el color del texto al poner el mouse encima */
-      }
-    
-  }
+  
