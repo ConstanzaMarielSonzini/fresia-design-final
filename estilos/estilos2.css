@@ -468,14 +468,14 @@ border-radius: 30px;
   
   .footer-info1{
   font-size: 14px;
-  color:#b69cff;
-  margin-top: 1;
+  color:hsl(256, 100%, 81%);
+  margin-top: 1%;
   padding: 20px;
   }
   
   .footer-info{
   font-size: 14px;
-  margin-top: 2;
+  margin-top: 2%;
   padding: 20px;
   }
  
@@ -501,11 +501,11 @@ border-radius: 30px;
   }
   
   .footer-info {
-      font-size: 25px;
-      margin-top: -20px;
-    }
+    font-size: 26px;
+    margin-top: -30px;
+  }
   
-    }
+  }
 
 /*FOOTER-index*/
 
@@ -559,8 +559,8 @@ border-radius: 30px;
 }
 
 .footer-index-info {
-    font-size: 25px;
-    margin-top: -20px;
+  font-size: 26px;
+  margin-top: -30px;
   }
 
   }
