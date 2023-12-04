@@ -497,6 +497,46 @@ transform: scale(1.03);
 opacity: 2;
 }
 
+.servicios-mobile {
+  display: none;
+}
+
+@media (max-width: 1100px){
+
+.servicios-mobile {
+    margin-top: 10%;
+    display: block;
+    font-size: 60px;
+    color: #7547f6;
+    font-family: 'Poppins', sans-serif;
+    }
+
+    .conteiner-servicios {
+      display: none;
+    }
+  
+  .servicios-mobile-derecha{
+    float: left;
+    margin-top: -6%;
+    padding-left: 12%;
+    text-align: left;
+    width: 75%;
+  }
+
+  .servicios-mobile-izquierda{
+    float: right;
+    margin-top: -6%;
+    padding-right: 12%;
+    text-align: right;
+    width: 75%;
+  }
+
+  .texto-mobile-negro{
+    color: #000000;
+  }
+}
+
+
 /*PROYECTOS*/
 /*proyecto casamiento*/
 #banner-servicio{
@@ -504,24 +544,20 @@ width: 65%;
 border-radius: 30px;
 }
 
-@media (max-width: 1100px){
-
-  #banner-servicio{
-    width: 90% ;
-    margin-top: 5%;
-    font-size: 40px;
-  } 
+.banners-proyectos{
+  margin-top: 4%;
 }
 
 .banners-contenedor{
   width: 100%;
   margin: 0 auto;
+  margin-top: 1%;
 }
 
 .banners-contenedor .boton-servicio {
   position: absolute;
-  margin-left: -22%;
-  margin-top: 21%;
+  margin-left: -15%;
+  margin-top: 12%;
   padding: 10px 60px;
   background-color: #b69cff;
   color: #ffffff;
@@ -538,7 +574,30 @@ border-radius: 30px;
   border: 2px solid #7e5ae0;
 }
 
+@media (max-width: 1100px){
 
+  #banner-servicio{
+    width: 90% ;
+    margin-top: 4%;
+    font-size: 40px;
+  } 
+
+ 
+  .banners-contenedor .boton-servicio {
+    position: absolute;
+    margin-left: -28%;
+    margin-top: 19%;
+    margin-bottom: 30px;
+    padding: 10px 60px;
+    background-color: #b69cff;
+    color: #ffffff;
+    border: 2px solid #b69cff;
+    border-radius: 40px;
+    font-size: 30px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
 
 /*FOOTER*/
 
@@ -605,7 +664,7 @@ border-radius: 30px;
   color: #fff; /* Color de texto del encabezado */
   display: flex;
   justify-content: center;
-  margin-top: 35%;
+  margin-top: 36%;
   }
   
   .footer-index-container {
@@ -671,6 +730,7 @@ margin-top: 50px;
 }
 
 .info-nosotros {
+  margin-bottom: 10%;
 width: 40%;
 padding-right: 3.3%;
 padding-left: 11%;
@@ -697,6 +757,8 @@ display: flex;
 transition: transform 0.5s; /* Para una transición suave al cambiar las imágenes */
 border-radius: 20px;
 margin: 0 auto; /* Centra horizontalmente la sección */
+overflow-x: auto;
+scroll-behavior: smooth;
 }
 
 .carousel-nosotros img {

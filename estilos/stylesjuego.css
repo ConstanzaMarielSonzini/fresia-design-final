@@ -2,13 +2,15 @@ body {
     
     font-family: 'Arial', sans-serif;
     text-align: center;
-    background-color: #000000;
+    background: linear-gradient(to right, #000000, #784fe9);
+    background-color: #b69cff;
     padding: 0;
     margin-top: 5%;
   }
 
   .icono {
     width: 8%;
+    margin-bottom: 1%;
   }
   
   h1 {
@@ -24,7 +26,7 @@ body {
     padding-bottom: 15px;
     margin-bottom: 4%;
     margin-top: 5%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
   }
   
   #guess-input {
@@ -40,7 +42,7 @@ body {
     padding: 8px 20px;
     border-radius: 25px;
     font-size: 15px;
-    background-color: #db019a;
+    background-color: #7547f6;
     color: #fff;
     border: none;
     margin-left: 1%;
@@ -48,7 +50,7 @@ body {
   
   button:hover {
     background-color: #ffffff;
-    color: rgb(208, 0, 215)
+    color: #7547f6;
   }
   
   #message {

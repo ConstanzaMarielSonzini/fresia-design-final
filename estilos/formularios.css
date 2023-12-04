@@ -10,9 +10,10 @@
 
 .titulo-formulario{
     float: left;
-    font-size: 55px;
-    margin-left: 10%;
-    margin-top: 10%;
+    font-size: 50px;
+    margin-left: 9%;
+    margin-top: 11%;
+    margin-bottom: 0%;
     text-align: justify;
     color: #000000;
     
@@ -118,7 +119,8 @@ input{
         font-size: 50px;
     }
 
-    .titulo-formulario{        
+    .titulo-formulario{       
+        font-size: 60px; 
         text-align: justify;
         color: #000000;        
     }
