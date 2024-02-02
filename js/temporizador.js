@@ -14,6 +14,6 @@ const countdownInterval = setInterval(() =>{
   if(distance <0){
     clearInterval(countdownInterval);
 
-    document.getElementById("countdown").innerHTML = "¡La cuenta regresiva ha terminado";
+    document.getElementById("countdown").innerHTML = "¡La cuenta regresiva ha terminado!";
   }
 }, 1000);
