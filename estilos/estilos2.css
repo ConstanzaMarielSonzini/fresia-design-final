@@ -632,7 +632,7 @@ border-radius: 30px;
 
     .footer {
       width: 100%;
-      background-color: #333; /* Color de fondo del pie de página */
+      background-color: #1f0000; /* Color de fondo del pie de página */
       color: #fff; /* Color de texto del pie de página */
       display: inline-block;
       padding-top: 2%;
